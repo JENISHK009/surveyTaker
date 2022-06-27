@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 const app = express()
 
-const PORT = 8000
+const PORT = process.env.PORT || 8000
 import { userRoute, surveyRoute } from './src/routes'
 require('dotenv').config({ path: '.env' })
 
